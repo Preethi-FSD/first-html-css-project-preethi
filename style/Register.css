@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* ------------login form css----------------- */
+.background{
+    background: url('../images/login\ banner.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.background > .back-arrow{
+    position: relative;
+}
+.back-arrow img{
+    width: 35px;
+    height: 35px;
+    background-color: rgba(104, 108, 98, 0.665);
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    transition: .5s linear;
+}
+.back-arrow img:hover{
+    background-color: rgba(255, 255, 255, 0.567);
+    color: black;
+    box-shadow: 2px 2px 3px lightgray;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-container{
+    width: 35%;
+    border: 2px solid black; 
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.496);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.526);
+    /* text-align: center; */
+}
+.login-container h2{
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    letter-spacing: 1.3px;
+}
+.form-group{
+    margin-bottom: 22px;
+}
+.form-group input{
+    background-color:transparent;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 100%;
+    outline: none;
+    font-size: 3.5vmin;
+    color: white;
+    padding: 9px 6px;
+}
+.form-group input::placeholder{
+    color: white;
+    padding: 0px 7px;
+}
+.idha input{
+    padding: 10px 30px;
+    background-color: rgba(255, 127, 80, 0.913);
+    outline: none;
+    border-radius: 10px;
+    color: black;
+    font-weight: 700;
+    border: none;
+    transition: .5s linear;
+}
+.idha input:hover{
+    /* background-color: transparent; */
+    /* border: 2px solid black; */
+    color: white;
+    font-weight: 700;
+}
+.idha{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.idha p:nth-child(1){
+   color: white;
+}
+.idha p:nth-child(1) a{
+    color: skyblue;
+    text-decoration: none;
+    transition: .5s linear;
+}
+.idha p:nth-child(1) a:hover{
+    text-decoration: underline;
+    color: white;
+
+}
+
+.separator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.separator::before , .separator::after{
+    content: "";
+    flex:1;
+    border: 1px solid white;
+}
+.separator:not(:empty)::before{
+    margin-right: .25rem;
+}
+.separator:not(:empty)::after{
+    margin-left: .25em;
+}
+.separator span{
+    color: white;
+}
+.google-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    
+}
+.google-btn a{
+    display: flex;
+    align-items: center;
+    border: 2px solid skyblue;
+    border-radius: 10px;
+    text-decoration: none;
+    color: skyblue;
+    cursor: pointer;
+    padding: 3px 5px;
+}
+.google-btn img{
+    width: 30px;
+    height: 30px;
+    padding: 0px 7px;
+}
